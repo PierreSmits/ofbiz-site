@@ -7,7 +7,8 @@
 <head>
 <meta charset="utf-8">
 <title>The Apache OFBiz&reg; Project - Source Repository</title>
-<meta name="Description" content="OFBiz is an open source enterprise automation software project licensed under the Apache License. It means you are not alone and can work with many others." />
+<meta name="Description"
+    content="OFBiz is an open source enterprise automation software project licensed under the Apache License. It means you are not alone and can work with many others." />
 <meta name="Robots" content="index,follow" />
 <!-- Mobile Specific Metas
     ================================================== -->
@@ -30,7 +31,7 @@
 <link type="text/css" id="colors" rel="stylesheet" href="/css/colors.css">
 <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if gte IE 9]><style type="text/css">.iconBig, .active, .hover a , .Shover a { filter: none !important; } </style> <![endif]-->
-<script src="js/modernizr-2.6.1.min.js"></script>
+<script src="js/modernizr-2.6.1.min.js" type="text/javascript"></script>
 <!-- Favicons
     ================================================== -->
 <link rel="shortcut icon" href="/images/favicon.ico">
@@ -40,169 +41,289 @@
 <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144.png">
 </head>
 <body>
-<!-- header -->
-<header id="mainHeader" class="clearfix">
-  <div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container"> <a href="index.html" class="brand"><img src="images/ofbiz_logo.png" alt="Apache OFBiz Logo"/></a>
-        <nav id="mainMenu" class="clearfix">
-          <ul>
-            <li><a href="index.html" class="firstLevel">Home</a></li>
-            <li><a href="#" class="firstLevel">Getting Started</a>
-              <ul>
-                <li><a href="developers.html" class="">Developers</a></li>
-                <li><a href="business-users.html" class="last">Business Users</a></li>
-              </ul>
-            </li>
-            <li><a href="#" class="firstLevel">News</a>
-              <ul>
-                <li><a href="//twitter.com/apacheofbiz" target="external">Twitter</a></li>
-                <li><a href="//blogs.apache.org/ofbiz/" target="external" class="last">Blog</a></li>
-              </ul>
-            </li>
-            <li><a href="#" class="firstLevel">Documentation</a>
-              <ul>
-                <li><a href="//cwiki.apache.org/confluence/display/OFBIZ/Documentation#Documentation-End-UserDocumentation" target="external" class="">User Documentation</a></li>
-                <li><a href="//cwiki.apache.org/confluence/display/OFBIZ/Technical+Documentation" target="external" class="">Technical Documentation</a></li>
-                <li><a href="//cwiki.apache.org/confluence/display/OFBIZ/Home" target="external" class="">Wiki</a></li>
-                <li><a href="//ci.apache.org/projects/ofbiz/site/javadocs/" target="external" class="last">API Reference</a></li>
-              </ul>
-            </li>
-            <li><a href="#" class="firstLevel">Community</a>
-              <ul>
-                <li><a href="getting-involved.html">Getting Involved</a></li>                
-                <li><a href="mailing-lists.html">Mailing Lists</a></li>
-                <li><a href="source-repositories.html">Source Repository</a></li>
-                <li><a href="download.html">Downloads</a></li>
-                <li><a href="//issues.apache.org/jira/browse/OFBIZ/?selectedTab=com.atlassian.jira.jira-projects-plugin:summary-panel" target="external" >Issue Tracker</a></li>
-                <li><a href="faqs.html" class="last">FAQ</a></li>
-              </ul>
-            </li>
-            <li><a href="ofbiz-demos.html" class="firstLevel">Demos</a></li>
-		  <li>
-		    <a href="//twitter.com/ApacheOfbiz" class="icon-twitter-bird socialIcon tips"
-		      target="external" title="follow us on Twitter"><span>twitter</span></a>
-		  </li>
-		  <li><a href="//www.youtube.com/user/ofbiz" class="icon-play socialIcon tips"  title="follow us on Youtube"><span>Youtube</span></a></li>
-		  <li><a href="//www.facebook.com/Apache-OFBiz-1478219232210477/?ref=page_internal" class="icon-facebook socialIcon tips"  title="follow us on Facebook"><span>facebook</span></a></li>
-		  <!--<li><a href="#" class="icon-rss socialIcon tips"  title="Our rss feed"><span>rss feed</span></a></li>         
-		  <li><a href="#" class="icon-gplus socialIcon tips"  title="follow us on Google +"><span>google +</span></a></li>
-		  <li><a href="#" class="icon-instagram socialIcon tips"  title="follow us on Instagram"><span>instagram</span></a></li>
-		  <li><a href="#" class="icon-linkedin socialIcon tips"  title="follow us on Linkedin"><span>linkedin</span></a></li>
-		  <li><a href="#" class="icon-pinterest-circled socialIcon tips"  title="follow us on Pinterest"><span>Pinterest</span></a></li>-->
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </div>
-</header>
-<!-- header -->
-<!-- globalWrapper -->
-<div id="globalWrapper">
-   
-  <!-- page content -->
- <section id="content" class="fullWidth">
-    <header class="headerPage">
-      <div class="container clearfix">
-        <div class="row">
-          <h1 class="span8">OFBiz Source Repository</h1>
-      <div class="span4" id="navTrail"> <a href="index.html" class="homeLink">home</a><span>/</span><a href="">Community</a><span>/</span><span class="current">Source Repository</span> </div>
+    <!-- header -->
+    <header id="mainHeader" class="clearfix">
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a href="index.html" class="brand"><img
+                        src="images/ofbiz_logo.png" alt="Apache OFBiz Logo" /></a>
+                    <nav id="mainMenu" class="clearfix">
+                        <ul>
+                            <li><a href="index.html" class="firstLevel">Home</a></li>
+                            <li><a href="#" class="firstLevel">Getting Started</a>
+                                <ul>
+                                    <li><a href="developers.html" class="">Developers</a></li>
+                                    <li><a href="business-users.html" class="last">Business Users</a></li>
+                                </ul></li>
+                            <li><a href="#" class="firstLevel">News</a>
+                                <ul>
+                                    <li><a href="//twitter.com/apacheofbiz" target="external">Twitter</a></li>
+                                    <li><a href="//blogs.apache.org/ofbiz/" target="external" class="last">Blog</a></li>
+                                </ul></li>
+                            <li><a href="#" class="firstLevel">Documentation</a>
+                                <ul>
+                                    <li><a
+                                        href="//cwiki.apache.org/confluence/display/OFBIZ/Documentation#Documentation-End-UserDocumentation"
+                                        target="external" class="">User Documentation</a></li>
+                                    <li><a
+                                        href="//cwiki.apache.org/confluence/display/OFBIZ/Technical+Documentation"
+                                        target="external" class="">Technical Documentation</a></li>
+                                    <li><a
+                                        href="//cwiki.apache.org/confluence/display/OFBIZ/Home"
+                                        target="external" class="">Wiki</a></li>
+                                    <li><a
+                                        href="//ci.apache.org/projects/ofbiz/site/javadocs/"
+                                        target="external" class="last">API Reference</a></li>
+                                </ul></li>
+                            <li><a href="#" class="firstLevel">Community</a>
+                                <ul>
+                                    <li><a href="getting-involved.html">Getting Involved</a></li>
+                                    <li><a href="mailing-lists.html">Mailing Lists</a></li>
+                                    <li><a href="source-repositories.html">Source Repository</a></li>
+                                    <li><a href="download.html">Downloads</a></li>
+                                    <li><a
+                                        href="//issues.apache.org/jira/browse/OFBIZ/?selectedTab=com.atlassian.jira.jira-projects-plugin:summary-panel"
+                                        target="external">Issue Tracker</a></li>
+                                    <li><a href="faqs.html" class="last">FAQ</a></li>
+                                </ul></li>
+                            <li><a href="ofbiz-demos.html" class="firstLevel">Demos</a></li>
+                            <li><a href="//twitter.com/ApacheOfbiz"
+                                class="icon-twitter-bird socialIcon tips" target="external"
+                                title="follow us on Twitter"><span>twitter</span></a></li>
+                            <li><a href="//www.youtube.com/user/ofbiz"
+                                class="icon-play socialIcon tips" title="follow us on Youtube"><span>Youtube</span></a></li>
+                            <li><a
+                                href="//www.facebook.com/Apache-OFBiz-1478219232210477/?ref=page_internal"
+                                class="icon-facebook socialIcon tips"
+                                title="follow us on Facebook"><span>facebook</span></a></li>
+                            <!--<li><a href="#" class="icon-rss socialIcon tips"  title="Our rss feed"><span>rss feed</span></a></li>         
+           <li><a href="#" class="icon-gplus socialIcon tips"  title="follow us on Google +"><span>google +</span></a></li>
+           <li><a href="#" class="icon-instagram socialIcon tips"  title="follow us on Instagram"><span>instagram</span></a></li>
+           <li><a href="#" class="icon-linkedin socialIcon tips"  title="follow us on Linkedin"><span>linkedin</span></a></li>
+           <li><a href="#" class="icon-pinterest-circled socialIcon tips"  title="follow us on Pinterest"><span>Pinterest</span></a></li>-->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
-      </div>
     </header>
-  <section id="content" class="features" >
-    <div class="slice clearfix">
-      <div class="container">
-        <div class="row ">
-          <aside class="span2 PortfolioStickyMenu" id="sidebar">
-            <ul  id="subnav" class="nav nav-stacked sidenav scrollspyNav">
-              <li> <a href="#SRepoPublic"> Public Access </a> </li>
-           <li> <a href="#SRepoComm"> Committer Access </a> </li>
-          </ul>
-          </aside>
-          <div class="span10">
-            <section  id="SRepoPublic" class="slice row clearfix">
-              <div class="span10">
-                <h2>Public Access</h2>
-                <div class="divider"><span></span></div>
-    <p>Anyone can checkout or browse the source code in the OFBiz public Subversion (SVN) repository.</P>
-    <h3>Browsing the Repository</h3>
-                <div class="divider"><span></span></div>
-                <p>You can browse the repository using any of the following links.</p>
-                <ul class="iconsList">
-                   <li><i class="icon-pin"></i> <a href="//svn.apache.org/repos/asf/ofbiz/" target="external"><strong>SVN - WebDAV</strong></a></li>
-        <li><i class="icon-pin"></i> <a href="//svn.apache.org/viewvc/ofbiz/" target="external"><strong>SVN - ViewVC</strong></a></li>
-    </ul>
-    <p></p>
-    <p>Our ofbiz-framework trunk and ofbiz-plugins trunk are also available on Git at the links below:</p>
-    <ul class="iconsList">
-        <li><i class="icon-pin"></i> <a href="//github.com/apache/ofbiz-framework" target="external"><strong>ofbiz-framework trunk on Github</strong></a></li>
-       <li><i class="icon-pin"></i> <a href="//github.com/apache/ofbiz-plugins" target="external"><strong>ofbiz-plugins trunk on Github</strong></a></li>
-    </ul>
-
-    <h3>Checking out the Repository Source Code</h3>
-    <p><strong>NOTE: </strong> Apache OFBiz uses <a href="//subversion.apache.org/" target="external"><strong>Apache Subversion</strong></a> for version control of our source repository. If you are not familiar with Apache Subversion and you don't have an SVN client tool, then following links could be useful:</p>
-    <p><i class="icon-pin"></i><a href="//subversion.apache.org/packages.html" target="external"><strong>SVN Client Tools</strong></a></p>
-    <p><i class="icon-pin"></i><a href="//subversion.apache.org/docs/" target="external"><strong>SVN Documenentation</strong></a></p>
-    <p>To checkout the source code, simply use the following command (if you are using a GUI client, configure it appropriately).</p>
-    <h2>Trunk</h2>
-     <dl class="iconsList">
-        <dt><i class="icon-pin"></i> <strong>ofbiz-framework</strong></dt>
-        <dd><code>$ svn co http://svn.apache.org/repos/asf/ofbiz/ofbiz-framework/trunk ofbiz-framework</code></dd>
-        <dt><i class="icon-pin"></i> <strong>ofbiz-plugins</strong></dt>
-        <dd><code>$ svn co http://svn.apache.org/repos/asf/ofbiz/ofbiz-plugins/trunk ofbiz-plugins </code></dd>
-    </dl>
-    <h2>Releases</h2>
-    <dl class="iconsList">
-        <dt><i class="icon-pin"></i> <strong>ofbiz-framework branch release18.12 </strong></dt>
-        <dd><code>$ svn co http://svn.apache.org/repos/asf/ofbiz/ofbiz-framework/branches/release18.12 ofbiz.18.12</code></dd>
-        <dt><i class="icon-pin"></i> <strong>ofbiz-plugins branch release18.12 </strong></dt>
-        <dd><code>$ svn co http://svn.apache.org/repos/asf/ofbiz/ofbiz-plugins/branches/release18.12 ofbiz.18.12-plugins</code></dd>
-        <dt><i class="icon-pin"></i> <strong>ofbiz-framework branch release17.12 </strong></dt>
-        <dd><code>$ svn co http://svn.apache.org/repos/asf/ofbiz/ofbiz-framework/branches/release17.12 ofbiz.17.12</code></dd>
-        <dt><i class="icon-pin"></i> <strong>ofbiz-plugins branch release17.12 </strong></dt>
-        <dd><code>$ svn co http://svn.apache.org/repos/asf/ofbiz/ofbiz-plugins/branches/release17.12 ofbiz.17.12-plugins</code></dd>
-        <dt><i class="icon-pin"></i> <strong>branch release16.11 (stable)</strong><dt>
-        <dd><code>$ svn co http://svn.apache.org/repos/asf/ofbiz/branches/release16.11 ofbiz.16.11</code></dd>
-    </dl>
-    <h2>Tools</h2>
-    <dl class="iconsList">
-      <dt><i class="icon-pin"></i> <strong>ofbiz tools</strong></dt>
-      <dd><code>$ svn co http://svn.apache.org/repos/asf/ofbiz/tools ofbiz-tools </code></dd>
-    </dl>
-    <h2>Website</h2>
-    <dl class="iconsList">
-      <dt><i class="icon-pin"></i> <strong>ofbiz website</strong></dt>
-      <dd><code>$ svn co http://svn.apache.org/repos/asf/ofbiz/site ofbiz-website </code></dd>
-    </dl>
+    <!-- header -->
+    <!-- globalWrapper -->
+    <div id="globalWrapper">
+        <!-- page content -->
+        <section id="content" class="fullWidth">
+            <header class="headerPage">
+                <div class="container clearfix">
+                    <div class="row">
+                        <h1 class="span8">OFBiz Source Repositories</h1>
+                        <div class="span4" id="navTrail">
+                            <a href="index.html" class="homeLink">home</a><span>/</span><a
+                                href="">Community</a><span>/</span><span class="current">Source
+                                Repository</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </section>
+        <section id="SRepoComm" class="slice row clearfix">
+            <h3>Browsing the code and contributions in each of the repositories</h3>
+            <p>Anyone can clone and checkout the source code from our repositories on Github, via following links:</P>
+            <ul class="iconsList">
+                <li><i class="icon-pin"></i> <a
+                    href="//github.com/apache/ofbiz-framework" target="external"><strong>ofbiz-framework</strong></a>
+                    - the repository containing all base components</li>
+                <li><i class="icon-pin"></i> <a
+                    href="//github.com/apache/ofbiz-plugins" target="external"><strong>ofbiz-plugins</strong></a>
+                    - the repository containing various plugins</li>
+                <li><i class="icon-pin"></i> <a
+                    href="//github.com/apache/ofbiz-site" target="external"><strong>ofbiz-site</strong></a>
+                    - the repository containing all elements of our website</li>
+                <li><i class="icon-pin"></i> <a
+                    href="//github.com/apache/ofbiz-tools" target="external"><strong>ofbiz-tools</strong></a>
+                    - the repository containing various tools to manage our products</li>
+            </ul>
+            <h3>Browsing the revisions in each of the repositories</h3>
+            <div class="divider">
+                <span></span>
+            </div>
+            <p>You can browse revisions in the repositories via the Fisheye
+                services of the ASF, using any of the following links.</p>
+            <ul class="iconsList">
+                <li><i class="icon-pin"></i> <a
+                    href="https://fisheye.apache.org/browse/ofbiz-framework#"
+                    target="external"><strong>ofbiz-framework</strong></a></li>
+                <li><i class="icon-pin"></i> <a
+                    href="https://fisheye.apache.org/browse/ofbiz-plugins#"
+                    target="external"><strong>ofbiz-plugins</strong></a></li>
+                <li><i class="icon-pin"></i> <a
+                    href="https://fisheye.apache.org/browse/ofbiz-site#"
+                    target="external"><strong>ofbiz-site</strong></a></li>
+                <li><i class="icon-pin"></i> <a
+                    href="https://fisheye.apache.org/browse/ofbiz-tools#"
+                    target="external"><strong>ofbiz-tools</strong></a></li>
+            </ul>
+            <p></p>
+            <h3>Forking and cloning our repositories</h3>
+            <p>Forking from our Github repositories and cloning is easily
+                done via standard git commands and various Git applications, but
+                also via built-in functions in IDEs like Apache Netbeans, Eclipse
+                and IntelliJ IDEA.</p>
+            <p>To checkout the source code directly from our repositories,
+                simply use the following command (if you are using a GUI client,
+                configure it appropriately).</p>
+            <h2>OFBIZ-FRAMEWORK</h2>
+            <p>This repository contains all base functionalities of the OFBiz
+                product. It also contains all release branches.</p>
+            <dl class="iconsList">
+                <dd>
+                    <code>$ git clone http://github.com/ofbiz-framework.git</code>
+                </dd>
+            </dl>
+            <!-- 
+            <h3>Releases</h3>
+            <dl class="iconsList">
+                <dt>
+                    <i class="icon-pin"></i> <strong>ofbiz-framework branch
+                        release18.12 </strong>
+                </dt>
+                <dd>
+                    <code>$ git clone
+                        http://github.com/apache/ofbiz-framework/branches/release18.12
+                        ofbiz.18.12</code>
+                </dd>
+                <dt>
+                    <i class="icon-pin"></i> <strong>ofbiz-framework branch
+                        release17.12 </strong>
+                </dt>
+                <dd>
+                    <code>$ git clone
+                        https://github.com/apache/ofbiz/ofbiz-framework/branches/release17.12
+                        ofbiz.17.12</code>
+                </dd>
+                <dt>
+                    <i class="icon-pin"></i> <strong>branch release16.11
+                        (stable)</strong>
+                </dt>
+                <dt></dt>
+                <dd>
+                    <code>$ git clone
+                        https://github.com/apache/ofbiz/branches/release16.11 ofbiz.16.11</code>
+                </dd>
+            </dl>
+             -->
+            <h2>OFBIZ-PLUGINS</h2>
+            <p>The ofbiz-plugins repository contains plugins maintained by us, and should preferably 
+                be cloned when you are within the 'ofbiz-framework' folder
+            </p>
+            <dl class="iconsList">
+                <dd>
+                    <code>$ git clone
+                        https://github.com/apache/ofbiz/ofbiz-plugins/trunk plugins </code>
+                </dd>
+            </dl>
+            <!-- 
+            <h2>Releases</h2>
+            <dl class="iconsList">
+                <dt>
+                    <i class="icon-pin"></i> <strong>ofbiz-framework branch
+                        release18.12 </strong>
+                </dt>
+                <dd>
+                    <code>$ git clone
+                        https://github.com/apache/ofbiz/ofbiz-framework/branches/release18.12
+                        ofbiz.18.12</code>
+                </dd>
+                <dt>
+                    <i class="icon-pin"></i> <strong>ofbiz-plugins branch
+                        release18.12 </strong>
+                </dt>
+                <dd>
+                    <code>$ git clone
+                        https://github.com/apache/ofbiz/ofbiz-plugins/branches/release18.12
+                        ofbiz.18.12-plugins</code>
+                </dd>
+                <dt>
+                    <i class="icon-pin"></i> <strong>ofbiz-framework branch
+                        release17.12 </strong>
+                </dt>
+                <dd>
+                    <code>$ git clone
+                        https://github.com/apache/ofbiz/ofbiz-framework/branches/release17.12
+                        ofbiz.17.12</code>
+                </dd>
+                <dt>
+                    <i class="icon-pin"></i> <strong>ofbiz-plugins branch
+                        release17.12 </strong>
+                </dt>
+                <dd>
+                    <code>$ git clone
+                        https://github.com/apache/ofbiz/ofbiz-plugins/branches/release17.12
+                        ofbiz.17.12-plugins</code>
+                </dd>
+                <dt>
+                    <i class="icon-pin"></i> <strong>branch release16.11
+                        (stable)</strong>
+                </dt>
+                <dt></dt>
+                <dd>
+                    <code>$ git clone
+                        https://github.com/apache/ofbiz/branches/release16.11 ofbiz.16.11</code>
+                </dd>
+            </dl>
+             -->
+            <h2>OFBIZ-SITE</h2>
+            <p>This repository contains the pages shown on our website</p>
+            <dl class="iconsList">
+                <dd>
+                    <code>$ git clone https://github.com/apache/site
+                        ofbiz-website </code>
+                </dd>
+            </dl>
+            <h2>OFBIZ-TOOLS</h2>
+            <p>This repository contains various project management tools</p>
+            <dl class="iconsList">
+                <dt>
+                    <i class="icon-pin"></i> <strong>ofbiz tools</strong>
+                </dt>
+                <dd>
+                    <code>$ git clone https://github.com/apache/ofbiz/tools
+                        ofbiz-tools </code>
+                </dd>
+            </dl>
+        </section>
     </div>
-            </section> 
-
-      <section  id="SRepoComm" class="slice row clearfix">
-              <div class="span10">
-                <h2>Committer Access</h2>
-                <div class="divider"><span></span></div>
-		    <p>Committer access requires a special account which is provided by the OFBiz adminstrators. If you have a Committer account you can access the repository through HTTPS. When checking in, you will be prompted your userID and password</p>
-		    <p>When you first connect you will be prompted to accept the SSL certificate. Verify the certificate is for svn.apache.org. After verification, select option 'P' to permanently add to your SVN configuration.</p>
-		    <p>Subversion can handle keyword expansion, eol conversion as well as many other features. These features are configured at the server level (actually only in the OFBiz repository branch), so you don't have to worry about them</p>   
-              </div> 
-            </section>
-
-          </div>
+    <!-- 
+    <section id="SRepoComm" class="slice row clearfix">
+        <div class="span10">
+            <h2>Committer Access</h2>
+            <div class="divider">
+                <span></span>
+            </div>
+            <p>Committer access requires a special account which is provided
+                by the OFBiz adminstrators. If you have a Committer account you can
+                access the repository through HTTPS. When checking in, you will be
+                prompted your userID and password</p>
+            <p>When you first connect you will be prompted to accept the SSL
+                certificate. Verify the certificate is for svn.apache.org. After
+                verification, select option 'P' to permanently add to your SVN
+                configuration.</p>
+            <p>Subversion can handle keyword expansion, eol conversion as
+                well as many other features. These features are configured at the
+                server level (actually only in the OFBiz repository branch), so you
+                don't have to worry about them</p>
         </div>
-      </div>
-    </div>
-   </section>
- </section>
-  <!-- page content -->
- 
-<!-- footer -->
-<footer class="footer1">
-  <div class="container" id="footer">
-    <div class="row">
-      <div class="span6 timelineWidget">
-        <h2>Latest tweets</h2>
-        <!--
+    </section>
+     -->
+    <!-- page content -->
+
+    <!-- footer -->
+    <footer class="footer1">
+        <div class="container" id="footer">
+            <div class="row">
+                <div class="span6 timelineWidget">
+                    <h2>Latest tweets</h2>
+                    <!--
         <div class="divider"><span></span></div>
         <ul class="socialNetwork nav">
           <li>
@@ -218,87 +339,132 @@
           <li><a href="#" class="icon-pinterest-circled socialIcon tips"  title="follow us on Pinterest"><span>Pinterest</span></a></li>
         </ul>
         -->
-        <div id="twitterFrame"> <a class="twitter-timeline" href="//twitter.com/ApacheOfbiz?height=250" data-widget-id="588661945194192896"  data-tweet-limit="2" data-theme="dark" data-chrome="nofooter noheader transparent" >Tweets by @ApacheOfbiz</a>
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                    <div id="twitterFrame">
+                        <a class="twitter-timeline"
+                            href="//twitter.com/ApacheOfbiz?height=250"
+                            data-widget-id="588661945194192896" data-tweet-limit="2"
+                            data-theme="dark" data-chrome="nofooter noheader transparent">Tweets
+                            by @ApacheOfbiz</a>
+                        <script type="text/javascript">
+                            !function(d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/
+                                        .test(d.location) ? 'http' : 'https';
+                                if (!d.getElementById(id)) {
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = p
+                                            + "://platform.twitter.com/widgets.js";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }
+                            }(document, "script", "twitter-wjs");
+                        </script>
+                    </div>
+                </div>
+                <div class="span3 contactWidget">
+                    <h2>Contact Community</h2>
+                    <div class="divider">
+                        <span></span>
+                    </div>
+                    <ul>
+                        <li><a href="mailing-lists.html">Mailing Lists</a></li>
+                        <li><a href="source-repositories.html">Source Repository
+                                (SVN)</a></li>
+                        <li><a href="//issues.apache.org/jira/browse/OFBIZ"
+                            target="external">Issue Tracker (Jira)</a></li>
+                        <li><a href="//www.youtube.com/user/ofbiz" target="external">OFBiz
+                                Youtube Channel</a></li>
+                        <li><a href="//vimeo.com/channels/apacheofbiz"
+                            target="external">OFBiz Vimeo Channel</a></li>
+                        <li><a href="//s.apache.org/ofbiz-slack-channel"
+                            target="external">OFBiz Chat</a><br /> <span class="footer-note">
+                                Note: To chat with users and developers of Apache OFBiz. <br>Please
+                                create a Slack account using <a
+                                href="//s.apache.org/slack-invite" target="external">this
+                                    invite link</a> and <a href="//s.apache.org/ofbiz-slack-channel"
+                                target="external">join the <b>#ofbiz channel</b>.
+                            </a> Please do <b>not</b> ask OFBiz questions in the #general channel.
+                        </span></li>
+                    </ul>
+                </div>
+                <div class="span3 sociallWidget">
+                    <h2>ASF Information</h2>
+                    <div class="divider">
+                        <span></span>
+                    </div>
+                    <ul>
+                        <li><a href="https://www.apache.org/foundation/"
+                            target="external">Apache Software Foundation</a></li>
+                        <li><a href="https://www.apache.org/events/current-event"
+                            target="external">Events</a></li>
+                        <li><a
+                            href="https://www.apache.org/foundation/sponsorship.html"
+                            target="external">Sponsorship</a> and <a
+                            href="https://www.apache.org/foundation/contributing.html"
+                            target="external">Donations</a></li>
+                        <li><a href="https://www.apache.org/foundation/thanks.html"
+                            target="external">Thanks</a></li>
+                        <li><a href="https://ofbiz.apache.org/security.html">Security</a></li>
+                        <li><a href="https://www.apache.org/licenses/"
+                            target="external">License</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="span3 contactWidget">
-        <h2>Contact Community</h2>
-        <div class="divider"><span></span></div>
-        <ul>
-          <li><a href="mailing-lists.html">Mailing Lists</a></li>
-          <li><a href="source-repositories.html">Source Repository (SVN)</a></li>
-          <li><a href="//issues.apache.org/jira/browse/OFBIZ" target="external">Issue Tracker (Jira)</a></li>
-          <li><a href="//www.youtube.com/user/ofbiz" target="external">OFBiz Youtube Channel</a></li>
-          <li><a href="//vimeo.com/channels/apacheofbiz" target="external">OFBiz Vimeo Channel</a></li>
-          <li>
-            <a href="//s.apache.org/ofbiz-slack-channel" target="external">OFBiz Chat</a><br/>
-            <span class="footer-note">
-              Note: To chat with users and developers of Apache OFBiz.
-              <br>Please create a Slack account using <a href="//s.apache.org/slack-invite" target="external">this invite link</a> and
-              <a href="//s.apache.org/ofbiz-slack-channel" target="external">join the <b>#ofbiz channel</b>.</a>
-              Please do <b>not</b> ask OFBiz questions in the #general channel.
-            </span>
-          </li>
-        </ul>
-      </div>
-      <div class="span3 sociallWidget">
-        <h2>ASF Information</h2>
-        <div class="divider"><span></span></div>
-        <ul>
-          <li><a href="https://www.apache.org/foundation/" target="external">Apache Software Foundation</a></li>
-          <li><a href="https://www.apache.org/events/current-event" target="external">Events</a></li>
-          <li><a href="https://www.apache.org/foundation/sponsorship.html" target="external">Sponsorship</a>
-          		and <a href="https://www.apache.org/foundation/contributing.html" target="external">Donations</a>
-          </li>
-          <li><a href="https://www.apache.org/foundation/thanks.html" target="external">Thanks</a></li>
-          <li><a href="https://ofbiz.apache.org/security.html">Security</a></li>
-          <li><a href="https://www.apache.org/licenses/" target="external">License</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
-<footer class="footer2" id="footerRights">
-  <div class="container">
-    <div class="row">
-      <div class="span12">
-        <p>
-          Copyright © 2020 The Apache Software Foundation.
-          <a href="https://www.apache.org/licenses/" target="external">Licensed under the  Apache License, Version 2.0</a>.<br/>
-          Apache OFBiz, OFBiz, the project logo and the Apache feather logo are trademarks of <a href="https://www.apache.org/" target="external">The Apache Software Foundation.</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</footer>
-<!-- footer -->
-</div>
-<!-- globalWrapper -->
-<script type="text/javascript" src="js/plugins/respond/respond.min.js"></script>
-<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-<script type="text/javascript" src="js/plugins/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script>
-<!-- third party plugins  -->
-<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
-<script type="text/javascript" src="bootstrap/js/bootstrap-carousel.js"></script>
-<script type="text/javascript" src="js/plugins/easing/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="js/plugins/pretty-photo/js/jquery.prettyPhoto.js"></script>
-<script type="text/javascript" src="js/plugins/hoverdir/jquery.hoverdir.js"></script>
-<!-- jQuery KenBurn Slider  -->
-<script type="text/javascript" src="js/plugins/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
-<script type="text/javascript" src="js/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-<!-- Custom  -->
-<script type="text/javascript" src="js/custom.js"></script>
-<script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', UA]);
-    _gaq.push(['_trackPageview']);
+    </footer>
+    <footer class="footer2" id="footerRights">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <p>
+                        Copyright © 2020 The Apache Software Foundation. <a
+                            href="https://www.apache.org/licenses/" target="external">Licensed
+                            under the Apache License, Version 2.0</a>.<br /> Apache OFBiz, OFBiz,
+                        the project logo and the Apache feather logo are trademarks of <a
+                            href="https://www.apache.org/" target="external">The Apache
+                            Software Foundation.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+    <div></div>
+    <!-- globalWrapper -->
+    <script type="text/javascript" src="js/plugins/respond/respond.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript"
+        src="js/plugins/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script>
+    <!-- third party plugins  -->
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap-carousel.js"></script>
+    <script type="text/javascript"
+        src="js/plugins/easing/jquery.easing.1.3.js"></script>
+    <script type="text/javascript"
+        src="js/plugins/pretty-photo/js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript"
+        src="js/plugins/hoverdir/jquery.hoverdir.js"></script>
+    <!-- jQuery KenBurn Slider  -->
+    <script type="text/javascript"
+        src="js/plugins/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript"
+        src="js/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- Custom  -->
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push([ '_setAccount', UA ]);
+        _gaq.push([ '_trackPageview' ]);
 
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-</script>
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+                    : 'http://www')
+                    + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 </body>
 </html>
